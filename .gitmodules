@@ -1,0 +1,10 @@
+[submodule "src/sensors/vesc"]
+	path = src/sensors/vesc
+	url = git@github.com:F1tenth-Project-Lutututu/vesc.git
+	branch = ros2
+[submodule "src/sensors/optitrack_pkg"]
+	path = src/sensors/optitrack_pkg
+	url = git@github.com:F1tenth-Project-Lutututu/optitrack_pkg.git
+[submodule "src/control/f1tenth_docking"]
+	path = src/control/f1tenth_docking
+	url = git@github.com:ikajdan/f1tenth_docking.git
