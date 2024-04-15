@@ -21,7 +21,7 @@ RUN apt-get update -q && \
         cmake \
         python3 \
         python3-pip \
-        wget && \
+        wget \
         ros-humble-joy && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
