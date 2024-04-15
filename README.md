@@ -2,7 +2,7 @@
 
 Clone the repository:
 ```
-git clone --recursive git@github.com:ikajdan/f1tenth_docking_container.git
+git clone --recursive git@github.com:ikajdan/f1tenth_container.git
 ```
 
 Build the container:
