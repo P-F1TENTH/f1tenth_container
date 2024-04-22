@@ -1,12 +1,12 @@
 [submodule "src/sensors/vesc"]
-	path = src/sensors/vesc
+	path = src/vesc
 	url = git@github.com:PUT-F1TENTH/vesc.git
 	branch = ros2
 [submodule "src/sensors/optitrack_pkg"]
-	path = src/sensors/optitrack_pkg
+	path = src/optitrack_pkg
 	url = git@github.com:PUT-F1TENTH/optitrack_pkg.git
 [submodule "src/control/f1tenth_docking"]
-	path = src/control/f1tenth_docking
+	path = src/f1tenth_docking
 	url = git@github.com:PUT-F1TENTH/f1tenth_docking.git
 [submodule "src/control_interfaces"]
 	path = src/control_interfaces
