@@ -14,7 +14,7 @@ docker run \
   --device=/dev/ttyUSB1 \
   --device=/dev/ttyUSB2 \
   --device=/dev/input/js0 \
-  --volume "${PWD}"/src:/root/ros2_ws/src \
+  --volume "${PWD}"/src:/root/ws/src \
   --name=f1tenth_docking_ros \
   f1tenth_docking_ros \
   bash
