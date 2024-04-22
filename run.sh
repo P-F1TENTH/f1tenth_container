@@ -7,14 +7,14 @@ fi
 
 docker run \
   -it \
-	--privileged \
-	--network=host \
+  --privileged \
+  --network=host \
   --device=/dev/ttyACM0 \
   --device=/dev/ttyUSB0 \
   --device=/dev/ttyUSB1 \
   --device=/dev/ttyUSB2 \
   --device=/dev/input/js0 \
-	--volume "${PWD}"/src:/home/root/ros2_ws/src \
-	--name=f1tenth_docking_ros \
-	f1tenth_docking_ros \
-	bash
+  --volume "${PWD}"/src:/root/ros2_ws/src \
+  --name=f1tenth_docking_ros \
+  f1tenth_docking_ros \
+  bash
