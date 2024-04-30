@@ -14,3 +14,9 @@ Run the container:
 ```
 ./run.sh
 ```
+
+Build the workspace:
+```
+cd /root/ws
+colcon build --symlink-install
+```
