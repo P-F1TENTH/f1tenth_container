@@ -20,3 +20,9 @@ Build the workspace:
 cd /root/ws
 colcon build --symlink-install
 ```
+
+Run:
+```
+ros2 launch launch/f1tenth_container.launch.py
+```
+

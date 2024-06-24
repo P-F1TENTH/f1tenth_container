@@ -18,6 +18,7 @@ docker run \
   --device=/dev/ttyUSB2 \
   --device=/dev/input/js0 \
   --volume "${PWD}"/src:/root/ws/src \
+  --volume "${PWD}"/launch:/root/ws/launch \
   --name=f1tenth_docking_ros \
   f1tenth_docking_ros \
   bash
