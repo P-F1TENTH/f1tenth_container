@@ -26,7 +26,8 @@ RUN apt-get update -q && \
         cmake \
         python3 \
         python3-pip \
-        wget && \
+        wget \
+        ros-humble-rviz2 && \
     cd /root/ws && \
     rosdep update && \
     rosdep install --from-paths src --ignore-src -r -y -q && \
