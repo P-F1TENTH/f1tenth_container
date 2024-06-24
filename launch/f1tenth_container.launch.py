@@ -14,17 +14,6 @@ def generate_launch_description():
                 PythonLaunchDescriptionSource(
                     PathJoinSubstitution(
                         [
-                            FindPackageShare("f1tenth_docking"),
-                            "launch",
-                            "f1tenth_docking.launch.py",
-                        ]
-                    )
-                )
-            ),
-            IncludeLaunchDescription(
-                PythonLaunchDescriptionSource(
-                    PathJoinSubstitution(
-                        [
                             FindPackageShare("vesc_driver"),
                             "launch",
                             "vesc_driver_node.launch.py",
@@ -43,5 +32,17 @@ def generate_launch_description():
                     )
                 )
             ),
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(
+                    PathJoinSubstitution(
+                        [
+                            FindPackageShare("f1tenth_docking"),
+                            "launch",
+                            "f1tenth_docking.launch.py",
+                        ]
+                    )
+                )
+            ),
+
         ]
     )
