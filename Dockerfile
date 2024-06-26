@@ -30,6 +30,7 @@ RUN apt-get update -q && \
         python3-pip \
         wget \
         ros-humble-rviz2 && \
+    pip install --no-cache-dir simple-pid && \
     rosdep update && \
     rosdep install --from-paths src --ignore-src -r -y -q && \
     apt-get clean && \
