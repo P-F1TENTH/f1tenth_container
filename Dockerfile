@@ -13,6 +13,8 @@ RUN ln -snf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime && \
 
 COPY ./src/ /root/ws/src/
 
+WORKDIR /root/ws
+
 RUN apt-get update -q && \
     apt-get install -y --no-install-recommends \
         bash-completion \
@@ -28,7 +30,6 @@ RUN apt-get update -q && \
         python3-pip \
         wget \
         ros-humble-rviz2 && \
-    cd /root/ws && \
     rosdep update && \
     rosdep install --from-paths src --ignore-src -r -y -q && \
     apt-get clean && \

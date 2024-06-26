@@ -11,3 +11,6 @@
 [submodule "src/control_interfaces"]
 	path = src/control_interfaces
 	url = git@github.com:PUT-F1TENTH/control_interfaces.git
+[submodule "src/pid_controller"]
+	path = src/pid_controller
+	url = git@github.com:PUT-F1TENTH/pid_controller.git
