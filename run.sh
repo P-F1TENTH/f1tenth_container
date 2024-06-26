@@ -32,8 +32,6 @@ else
     --env=DISPLAY="${DISPLAY}"  \
     --env=QT_X11_NO_MITSHM=1 \
     --env=XDG_RUNTIME_DIR=/tmp \
-    --env=WAYLAND_DISPLAY="${WAYLAND_DISPLAY}" \
-    --volume="${XDG_RUNTIME_DIR}"/"${WAYLAND_DISPLAY}":/tmp/"${WAYLAND_DISPLAY}" \
     --env=XAUTHORITY="${XAUTH}" \
     --volume="${XAUTH}":"${XAUTH}" \
     --volume="${XSOCK}":"${XSOCK}" \
