@@ -16,6 +16,12 @@ def generate_launch_description():
                 executable="static_transform_publisher",
                 arguments=["0", "0", "0", "0", "0", "0", "map", "predicted_states"],
             ),
+            Node(
+                package="tf2_ros",
+                namespace="predicted_states_to_map",
+                executable="static_transform_publisher",
+                arguments=["0", "0", "0", "0", "0", "0", "map", "odom"],
+            ),
             IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(
                     PathJoinSubstitution(
