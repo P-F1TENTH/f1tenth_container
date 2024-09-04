@@ -55,5 +55,16 @@ def generate_launch_description():
                     )
                 )
             ),
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(
+                    PathJoinSubstitution(
+                        [
+                            FindPackageShare("pid_controller"),
+                            "launch",
+                            "pid_controller.launch.py",
+                        ]
+                    )
+                )
+            ),
         ]
     )
