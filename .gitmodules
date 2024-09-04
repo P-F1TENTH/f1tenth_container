@@ -2,15 +2,20 @@
 	path = src/vesc
 	url = git@github.com:PUT-F1TENTH/vesc.git
 	branch = ros2
+	update = merge
 [submodule "src/sensors/optitrack_pkg"]
 	path = src/optitrack_pkg
 	url = git@github.com:PUT-F1TENTH/optitrack_pkg.git
+	update = merge
 [submodule "src/control/f1tenth_docking"]
 	path = src/f1tenth_docking
 	url = git@github.com:PUT-F1TENTH/f1tenth_docking.git
+	update = merge
 [submodule "src/control_interfaces"]
 	path = src/control_interfaces
 	url = git@github.com:PUT-F1TENTH/control_interfaces.git
+	update = merge
 [submodule "src/pid_controller"]
 	path = src/pid_controller
 	url = git@github.com:PUT-F1TENTH/pid_controller.git
+	update = merge
